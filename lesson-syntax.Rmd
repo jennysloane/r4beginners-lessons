@@ -1,0 +1,153 @@
+---
+title: "1. Basic Syntax"
+description: |
+   In this lesson we will review the basic syntax of R, including defining several common operators.
+# author:
+#   - name: Jenny Sloane
+# date: 2022-10-08
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+In this lesson we will review some of the basic syntax of R, including the following common operators:
+
+- assignment operator `<-`
+- greater than operator `>`
+- less than operator `<`
+- equality operator `==` 
+- inequality operator `!=`
+- and operator `&`
+- or operator `|`
+
+## Syntax 
+
+Syntax in computer programming is a set of rules that defines the structure of a language, similar to how we have rules for grammar and spelling. If you write a sentence with incorrect spelling or grammar, the sentence may not make sense. If you write code without proper syntax, the code won't be able to run and you'll get an error message. 
+
+### Example
+
+- In this example, we are trying to print the following famous coding statement: "hello world"
+
+- In this first R chunk, we can see how to successfully print "hello world"
+
+**To run the line of code below (aka R chunk) you can either push the green arrow pointing to the right or click on the line of code and push ctrl+enter (windows) or cmd+enter (mac)**
+
+```{r}
+print("hello world")
+```
+
+- In this second R chunk, we can see what happens if we have even the slightest mistake in our code. R recognizes "print", but not "Print" with a capital P. This is an important lesson because it demonstrates that R (and many programming languages) are sensitive to capitalization. Therefore, if you run a line of code and get an error, it's always a good idea to double check that you've spelled everything correctly.
+
+```{r eval=FALSE}
+Print("hello world")
+```
+
+## Operators
+
+### Assignment Operator
+
+- In R, one of the most common operators is the "assignment operator" which looks like this arrow `<-`
+- In most situations, it would also be acceptable to use the = sign, but in R, the arrow is the typical notation
+- In this next example, we are assigning x to be 10, y to be 25, and z to be 100
+- x, y, and z are stored as values (or variables) in our Environment
+
+**Before you run the R chunk below, click on the Environment pane (usually located in the top right corner of RStudio). Watch what happens when you run the code below**
+
+```{r}
+x <- 10
+x
+
+y <- 25
+y
+
+z <- 100
+z
+```
+
+- As you can see, when you use the assignment operator, it saves the values (x, y, z) in your environment. This means that R will remember these values
+- To test this out, type "z" into your console and press enter and see what happens! Spoiler: it should return the value 100
+
+### Greater or Less than Operators
+
+- `>` greater than operator
+- `<` less than operator
+- In this example, we will ask if x is greater than y? 
+- Remember, we have x assigned to 10 and y assigned to 25. So, is 10 greater than 25? True or False? 
+
+```{r}
+x > y
+```
+
+- Is x less than y? 
+
+```{r}
+x < y 
+```
+
+
+### Equality Operators
+
+- `==` is the equal-to operator
+- We can think of the example below as "is x equal to y?" 
+- Notice, in this scenario R will return TRUE or FALSE and the values of x and y do not change
+
+**Be careful not to confuse == and =** 
+
+```{r}
+x == y 
+x # x is still 10
+```
+
+- If we instead had x = y, R doesn't return anything, but the value of x has updated in the environment 
+
+```{r}
+x = y
+x # x is now 25
+```
+
+- Here, we'll just re-assign x to 10
+
+```{r}
+x <- 10
+```
+
+- `!=` is the not-equal-to operator (opposite of ==)
+- We can think of the example below as: "Is x *not equal* to y, True or False?"
+
+```{r}
+x != y 
+```
+
+### The And Operator
+
+- `&` is the "and" operator
+- We can think of this example in two parts: Is z greater than 50 AND is z less than 200? 
+- Remember, z is 100. So, is it true that 100 > 50 AND 100 < 200? 
+- In order for this statement to be true, both pieces must be true
+
+```{r}
+z > 50 & z < 200 
+```
+
+- What about if we asked the following: is z > 50 AND is z > 200? 
+
+```{r}
+z > 50 & z > 200
+```
+
+### The Or Operator
+
+- `|` is the "or" operator
+- We can again think of this example in two parts: is z greater than 50 OR is z greater than 200?
+- However, this time, in order for the statement (aka expression) to be true, only one of the parts needs to be true
+- So, let's test the same line of code we had in the last example but with an | operator instead of an & operator 
+
+```{r}
+z > 50 | z > 200
+```
+
+## THE END 

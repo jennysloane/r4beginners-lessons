@@ -1,0 +1,138 @@
+---
+title: "2. Variable Types"
+description: |
+   In this lesson we will introduce different types of variables.
+# author:
+#   - name: Jenny Sloane
+# date: 2022-10-08
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+In this lesson we will introduce different types of variables, including character, numeric, integer, logical. 
+
+## Types of Variables
+
+### Character
+
+- A character is a type of *class* that contains a string of characters. For example, a name is a string of characters (or letters).
+
+- In the example below, I've saved my name "Jenny" to a variable I've called "my_char".
+
+```{r}
+my_char <- "Jenny"
+```
+
+- To check what type of variable you have, you can use the `class()` function
+- All we have to do is insert our variable (my_char) within the parentheses of our function
+
+*Note, we will review functions in a following lesson, but for now just run the below line of code and see what gets returned*
+
+```{r}
+class(my_char)
+```
+
+- As you can see, R returned the word "character" as we may have expected
+
+- We can also use the `is.character()` function to check if our variable is a character. This function will return either TRUE or FALSE
+
+```{r}
+is.character(my_char)
+```
+
+### Numeric
+
+- Numeric is a type of *class* that contains whole numbers *or* numbers with decimals
+- Let's test out a couple of examples 
+- We will first assign a number to a new variable (my_num1 or my_num2)
+- And then we'll ask R to print (or return) the value for us
+
+```{r}
+my_num1 <- 22 # my favorite number!
+my_num1 
+
+my_num2 <- 22.22
+my_num2
+```
+
+- Let's check the classes of the variables we've just created
+
+```{r}
+class(my_num1)
+class(my_num2)
+```
+
+- We can see that both of our variables are numeric
+
+### Integer
+
+- An integer is a type of *class* that contains *only* whole numbers 
+- Of course, this is similar to the numeric class, but without decimals. So how does R know if a whole number is numeric or an integer?
+- By default, R will assign any whole number to the numeric class. We observed this above when we saw the class of the number 22 was numeric
+- However, as we'll see below, you can convert a numeric class to an integer using the `as.integer()` function
+
+```{r}
+my_int1 <- as.integer(22)
+class(my_int1)
+```
+
+- But, what happens if we try to convert a number with a decimal to an integer?
+
+```{r}
+my_int2 <- as.integer(22.22)
+class(my_int2)
+```
+
+- This works! It has successfully converted 22.22 to an integer
+- However, it is important to note that 22.22 was forced to become a whole number
+- So, if we look at my_int2, it is now the whole number 22 rather than the decimal 22.22
+
+```{r}
+my_int2
+```
+
+### Logical
+
+- Logical is a special type of *class* that contains only two possible values: TRUE or FALSE
+- Please note that the logical values must be written in all caps with no quotes
+
+```{r}
+log1 <- TRUE
+log2 <- FALSE
+```
+
+- Once again, we'll check the classes of the variables we've just created
+
+```{r}
+class(log1)
+class(log2)
+```
+
+- What happens if we try the following?
+
+```{r}
+log3 <- "TRUE"
+class(log3)
+```
+
+- Because TRUE is in "" here, by default R assigns this to the character class
+
+```{r eval=FALSE}
+log4 <- true
+```
+
+- This example doesn't even run! R gives us an error here saying "object 'true' not found"
+
+## Summary
+
+- Character: list of character strings 
+- Numeric: whole numbers OR numbers with decimals
+- Integer: Only whole numbers
+- Logical: TRUE or FALSE
+
+## THE END
