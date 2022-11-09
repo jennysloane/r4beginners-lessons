@@ -4,11 +4,20 @@ On this GitHub repo, you will find all of the lessons that are part of the [R4Be
 
 # Steps to Getting Started
 
-- Clone this repository by clicking on the green "Clone" button and copying the URL 
-- Open up RStudio 
-- In RStudio, create a new R Project by clicking on the R cube in the top right corner and selecting New Project
-- Select Version Control -> Git -> and paste the URL 
-- Make sure to save this project somewhere safe 
+- Click on the green Code button
+- Select Download Zip
+- Unzip the folder and save the r4begginers-lessons folder somewhere safe on your local computer
+- Open the folder 
+- Double click on the r4beginners-lesson file (it's the one with the blue R cube)
+- This will automatically open RStudio
+- In the files pane, you'll see all the .Rmd lessons
 - Open whichever .Rmd lesson that you want to work on!
 
 *Note - if you come across a package that you have never used before, you'll have to install it using the `install.packages()` function*
+
+# .Rmd files
+- The .Rmd files contain the code to each of the different lessons
+- If you wish to work through the lessons on your own computer, these are the files you'll be working with
+
+# HTML files 
+- The .html files also contain the lessons, but if you open any of the html files it will open the lesson in a new browser rather than open up in RStudio
