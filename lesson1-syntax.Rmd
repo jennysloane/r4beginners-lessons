@@ -42,7 +42,6 @@ Syntax in computer programming is a set of rules that defines the structure of a
 
 ```{r}
 print("hello world")
-print("hello world")
 ```
 
 - In this second R chunk, we can see what happens if we have even the slightest mistake in our code. R recognizes "print", but not "Print" with a capital P. This is an important lesson because it demonstrates that R (and many programming languages) are sensitive to capitalization. Therefore, if you run a line of code and get an error, it's always a good idea to double check that you've spelled everything correctly.
