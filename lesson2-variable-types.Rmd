@@ -1,6 +1,16 @@
 ---
 title: "2. Variable Types"
-output: rmdformats::html_clean
+description: |
+   In this lesson we will introduce different types of variables.
+# author:
+#   - name: Jenny Sloane
+date: 2023-02-19
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    self_contained: false
 ---
 
 ```{r setup, include=FALSE}
@@ -123,9 +133,62 @@ log4 <- true
 
 ## Summary
 
+In this lesson, we learned about different types of variables. We specifically focused on 4 of the most common variables:
+
 - Character: list of character strings 
 - Numeric: whole numbers OR numbers with decimals
 - Integer: Only whole numbers
 - Logical: TRUE or FALSE
 
-## THE END
+## Exercises
+
+In this exercise, we'll return to our three fabulous female artists: Jennifer Lopez, Taylor Swift, and Miley Cyrus. In the exercises in lesson we, we compared their heights, which we can see below. 
+
+*Remember to run the code before moving on.*
+
+```{r}
+jennifer <- 64.57
+taylor <- 70.87
+miley <- 64.96
+```
+
+1. What kind of variables are we dealing with here? Are they characters, numeric, integers, or logical? Once you think you know the answer, in the R Chunk below, use the `class()` function to see if you're right. Test it out with any or all of the artists. 
+
+```{r}
+
+```
+
+2. Now, convert Jennifer's height to an integer. What number number is returned? 
+
+```{r}
+
+```
+
+3. Save your results to a new variable `jennifer_int`. Do the same steps for Miley and save the result to `miley_int`. 
+
+```{r}
+
+```
+
+4. When we're dealing with integers, are Miley and Jennifer the same height?
+
+```{r}
+
+```
+
+5. Create three new variables with each woman's respective full names (first and last). Save your three variables as`jennifer_name`, `taylor_name`, and `miley_name`. 
+
+*Hint: ff you get an error that says "object not found", return to the very first R Chunk in this lesson and see how I saved my name.*
+
+```{r}
+
+```
+
+What type of variables are these? Test it out with any or all of the artists. 
+
+```{r}
+
+```
+
+
+## THE END `r emo::ji("tada")` 

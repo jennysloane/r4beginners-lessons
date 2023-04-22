@@ -1,13 +1,24 @@
 ---
 title: "1. Basic Syntax"
-output: rmdformats::html_clean
+description: |
+   In this lesson we will review the basic syntax in R, including defining several common operators.
+# author:
+#   - name: Jenny Sloane
+date: 2023-02-20
+output:
+  distill::distill_article:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+    self_contained: false
+#preview: featured-lesson1.png
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
 ```
 
-In this lesson we will review some of the basic syntax of R, including the following common operators:
+In this lesson we will review some of the basic syntax in R, including the following common operators:
 
 - `<-` assignment operator 
 - `>` greater than operator 
@@ -27,7 +38,7 @@ Syntax in computer programming is a set of rules that defines the structure of a
 
 - In this first R chunk, we can see how to successfully print "hello world".
 
-**To run the line of code below (aka R chunk) you can either push the green arrow pointing to the right or click on the line of code and push ctrl+enter (windows) or cmd+enter (mac)**.
+**To run the line of code below (aka R chunk) you can either push the green arrow pointing to the right or click on the line of code and push ctrl+enter (windows) or cmd+enter (mac).**
 
 ```{r}
 print("hello world")
@@ -61,7 +72,7 @@ z <- 100
 z
 ```
 
-- As you can see, when you use the assignment operator, it saves the values (x, y, z) in your environment. This means that R will remember these values.
+- As you can see, when you use the assignment operator, it saves the values (x, y, z) in your Environment. This means that R will remember these values.
 - To test this out, type "z" into your console and press enter and see what happens! Spoiler: it should return the value 100.
 
 ### Greater or Less than Operators
@@ -99,7 +110,7 @@ x # x is still 10
 - If we instead had x = y, R doesn't return anything, but the value of x has updated. 
 
 ```{r}
-x = y
+x = y # remember, this could also be x <- y
 x # x is now 25
 ```
 
@@ -149,5 +160,42 @@ z > 50 | z > 200
 In this lesson we learned about syntax in R and some of the most common operators (`<-`, `>`, `<`, `==`, `!=`, `!=`, `&`, `|`). 
 
 We also learned a few useful tips, including how to run R chunks and how to leave comments using the #. 
+
+## Exercises
+
+In this exercise, we'll compare the heights (in inches) of some amazing female artists: Jennifer Lopez, Taylor Swift, and Miley Cyrus.
+
+1. Create three variables with each woman's respective height (Jennifer = 64.57, Taylor = 70.87, Miley = 64.96). Save your three variables as `jennifer`, `taylor`, and `miley`. 
+
+*Remember to use the assignment operator and make sure to run each line of code (or the entire code chunk) to make sure we save the variables to the environment.*
+
+```{r}
+
+```
+
+2. Is Miley shorter than Taylor? Write 1 line of code that will return the answer as either `TRUE` of `FALSE`.
+
+```{r}
+
+```
+
+3. Are Miley and Jennifer the same heights? 
+
+```{r}
+
+```
+
+
+4. Is Miley taller than both Jennifer **and** Taylor? 
+
+```{r}
+
+```
+
+5. Is Miley taller than either Jennifer **or** Taylor? 
+
+```{r}
+
+```
 
 ## THE END `r emo::ji("tada")` 
