@@ -181,4 +181,4 @@ What type of variables are these? Test it out with any or all of the artists.
 ```
 
 
-## THE END `r emo::ji("tada")` 
+## THE END 
