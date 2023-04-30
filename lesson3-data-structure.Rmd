@@ -1,18 +1,7 @@
 ---
 title: "3. Data Structure - Part 1"
-description: |
-   In this lesson we will review different data structures in R, including vectors, matrices, and arrays.
-# author:
-#   - name: Jenny Sloane
-date: 2023-02-18
-output:
-  distill::distill_article:
-    toc: true
-    toc_depth: 3
-    toc_float: true
-    self_contained: false
+output: html_document
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
