@@ -237,4 +237,4 @@ Hint: if you get stuck, try to use Google to learn how to print letters of the a
 
 ```
 
-## THE END `r emo::ji("tada")` 
+## THE END

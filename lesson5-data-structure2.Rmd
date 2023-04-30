@@ -226,4 +226,4 @@ Print `airquality_tibble` to see the results.
 ```
 
 
-## THE END `r emo::ji("tada")` 
+## THE END 

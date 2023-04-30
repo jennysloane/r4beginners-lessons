@@ -230,4 +230,4 @@ Now, save the penguins dataset to a new variable called `penguins_data` and then
 ```
 
 
-## THE END `r emo::ji("tada")` 
+## THE END 

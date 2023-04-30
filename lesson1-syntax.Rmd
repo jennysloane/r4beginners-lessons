@@ -187,4 +187,4 @@ In this exercise, we'll compare the heights (in inches) of some amazing female a
 
 ```
 
-## THE END `r emo::ji("tada")` 
+## THE END
